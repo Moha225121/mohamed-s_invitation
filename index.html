@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07162f" />
+  <meta name="description" content="دعوة لحضور مناقشة مشروع التخرج من برنامج هندسة البرمجيات بالجامعة الليبية الدولية." />
+  <meta name="keywords" content="دعوة, مناقشة مشروع التخرج, محمد ميلود بوقمرة, الجامعة الليبية الدولية, هندسة البرمجيات" />
+  <meta name="author" content="المهندس محمد ميلود بوقمرة" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:title" content="دعوة مناقشة مشروع التخرج - محمد ميلود بوقمرة" />
+  <meta property="og:description" content="دعوة لحضور مناقشة مشروع التخرج من برنامج هندسة البرمجيات بالجامعة الليبية الدولية." />
+  <meta property="og:image" content="assets/mohamed.jpg" />
+  <meta property="og:site_name" content="دعوة مناقشة مشروع التخرج" />
+
+  <title>دعوة مناقشة مشروع التخرج - محمد ميلود بوقمرة</title>
+  <link rel="icon" type="image/png" href="assets/limu-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+<body>
+  <div class="page-shell" aria-hidden="true">
+    <div class="geometric-pattern"></div>
+    <div class="particles" id="particles"></div>
+    <span class="glow glow-one"></span>
+    <span class="glow glow-two"></span>
+  </div>
+
+  <header class="site-header reveal">
+    <a class="brand-mark" href="#invitation" aria-label="الانتقال إلى الدعوة">
+      <img src="assets/limu-logo.png" alt="شعار الجامعة الليبية الدولية" />
+    </a>
+    <button class="timer-trigger" type="button" id="timerOpenButton" aria-haspopup="dialog" aria-controls="timerModal" aria-expanded="false">
+      عرض المؤقت
+    </button>
+  </header>
+
+  <div class="timer-modal" id="timerModal" role="dialog" aria-modal="true" aria-labelledby="timerModalTitle" hidden>
+    <div class="timer-modal-backdrop" data-close-timer></div>
+    <div class="timer-modal-panel">
+      <button class="timer-close" type="button" id="timerCloseButton" aria-label="إغلاق المؤقت">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18 6 6 18M6 6l12 12"></path>
+        </svg>
+      </button>
+      <p class="section-kicker">العد التنازلي</p>
+      <h2 id="timerModalTitle">موعد المناقشة يقترب</h2>
+      <div class="countdown modal-countdown" aria-live="polite">
+        <div class="time-box">
+          <strong data-modal-unit="days">00</strong>
+          <span>يوم</span>
+        </div>
+        <div class="time-box">
+          <strong data-modal-unit="hours">00</strong>
+          <span>ساعة</span>
+        </div>
+        <div class="time-box">
+          <strong data-modal-unit="minutes">00</strong>
+          <span>دقيقة</span>
+        </div>
+        <div class="time-box">
+          <strong data-modal-unit="seconds">00</strong>
+          <span>ثانية</span>
+        </div>
+      </div>
+    </div>
+    <button class="modal-details-link" type="button" id="modalDetailsLink">
+      اضغط هنا لتفاصيل الدعوة
+    </button>
+  </div>
+
+  <main>
+    <section class="hero" id="invitation" aria-labelledby="invitation-title">
+      <div class="invitation-card reveal" id="invitationCard">
+        <div class="card-shine"></div>
+
+        <div class="hero-content">
+          <div class="copy-block">
+            <p class="kicker">دعوة رسمية</p>
+            <h1 id="invitation-title">دعوة لحضور مناقشة مشروع التخرج</h1>
+
+            <div class="ornament" aria-hidden="true">
+              <span></span>
+              <i></i>
+              <span></span>
+            </div>
+
+            <p class="lead">
+              يتشرف المهندس محمد ميلود بوقمرة<br />
+              بدعوتكم لحضور مناقشة مشروع التخرج<br />
+              من برنامج هندسة البرمجيات<br />
+              بكلية الهندسة والتكنولوجيا<br />
+              بالجامعة الليبية الدولية
+            </p>
+
+            <div class="hero-details" aria-label="تفاصيل المناقشة المختصرة">
+              <span>قاعة ليبيا الواعدة</span>
+              <span>11:00 صباحًا</span>
+              <span>السبت 18/7/2026</span>
+            </div>
+
+            <p class="closing">حضوركم يشرفنا ويسعدنا</p>
+          </div>
+
+          <figure class="portrait-frame" aria-label="صورة المهندس محمد ميلود بوقمرة">
+            <div class="portrait-halo"></div>
+            <img src="assets/mohamed.jpg" alt="المهندس محمد ميلود بوقمرة" />
+            <figcaption>المهندس محمد ميلود بوقمرة</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section" aria-labelledby="details-title">
+      <div class="section-heading reveal">
+        <p>تفاصيل المناسبة</p>
+        <h2 id="details-title">موعد ومكان المناقشة</h2>
+      </div>
+
+      <div class="details-grid">
+        <article class="detail-card reveal">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <path d="M12 21s7-5.2 7-12A7 7 0 0 0 5 9c0 6.8 7 12 7 12Z"></path>
+              <circle cx="12" cy="9" r="2.5"></circle>
+            </svg>
+          </span>
+          <h3>المكان</h3>
+          <p>قاعة ليبيا الواعدة</p>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M12 7v5l3.5 2"></path>
+            </svg>
+          </span>
+          <h3>الزمان</h3>
+          <p>الساعة 11:00 صباحًا</p>
+        </article>
+
+        <article class="detail-card reveal">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="img">
+              <rect x="4" y="5" width="16" height="15" rx="2"></rect>
+              <path d="M8 3v4M16 3v4M4 10h16"></path>
+            </svg>
+          </span>
+          <h3>اليوم</h3>
+          <p>السبت 18/7/2026</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section reveal" aria-labelledby="countdown-title">
+      <div class="countdown-card">
+        <p class="section-kicker">العد التنازلي</p>
+        <h2 id="countdown-title">حتى لحظة المناقشة</h2>
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="time-box">
+            <strong data-unit="days">00</strong>
+            <span>يوم</span>
+          </div>
+          <div class="time-box">
+            <strong data-unit="hours">00</strong>
+            <span>ساعة</span>
+          </div>
+          <div class="time-box">
+            <strong data-unit="minutes">00</strong>
+            <span>دقيقة</span>
+          </div>
+          <div class="time-box">
+            <strong data-unit="seconds">00</strong>
+            <span>ثانية</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="actions-section reveal" aria-label="إجراءات الدعوة">
+      <a class="action-button primary" href="GOOGLE_MAPS_LINK_HERE" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 21s7-5.2 7-12A7 7 0 0 0 5 9c0 6.8 7 12 7 12Z"></path>
+          <circle cx="12" cy="9" r="2.5"></circle>
+        </svg>
+        فتح موقع الجامعة
+      </a>
+
+      <button class="action-button" type="button" id="shareButton">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <path d="m8.6 10.7 6.8-4.4M8.6 13.3l6.8 4.4"></path>
+        </svg>
+        مشاركة الدعوة
+      </button>
+
+      <button class="action-button" type="button" id="calendarButton">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4" y="5" width="16" height="15" rx="2"></rect>
+          <path d="M8 3v4M16 3v4M4 10h16M12 14v4M10 16h4"></path>
+        </svg>
+        إضافة إلى التقويم
+      </button>
+    </section>
+
+    <section class="final-note reveal" aria-label="رسالة ختامية">
+      <p>نتشرف بحضوركم ومشاركتكم هذه اللحظة المهمة.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>مقدمة من المهندس محمد ميلود بوقمرة</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js?v=4"></script>
+</body>
+</html>
